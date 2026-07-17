@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maryam Ishaq | MW Web Studio — Frontend Web Developer & UI/UX Designer</title>
+<meta name="description" content="Maryam Ishaq of MW Web Studio designs and builds modern, high-converting websites for businesses worldwide. Frontend development, web design, and UI/UX.">
+<meta name="keywords" content="frontend developer, web designer, UI/UX designer, freelance web developer, MW Web Studio, Maryam Ishaq">
+<meta property="og:title" content="MW Web Studio — Maryam Ishaq, Frontend Web Developer">
+<meta property="og:description" content="Building modern websites that grow businesses.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Jost:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ LOADING SCREEN ============ -->
+<div class="loader" id="loader">
+  <div class="loader-inner">
+    <svg class="loader-monogram" viewBox="0 0 120 120">
+      <circle class="loader-ring" cx="60" cy="60" r="52"/>
+      <text x="60" y="72" text-anchor="middle" class="loader-mw">MW</text>
+    </svg>
+    <div class="loader-bar"><span></span></div>
+    <p class="loader-label">tailoring the experience</p>
+  </div>
+</div>
+
+<!-- ============ CURSOR ============ -->
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- ============ GOLD THREAD (signature scroll spine) ============ -->
+<svg class="gold-thread" id="goldThread" viewBox="0 0 4 3000" preserveAspectRatio="none">
+  <path id="threadPathBg" d="M2,0 L2,3000" />
+  <path id="threadPathFg" d="M2,0 L2,3000" />
+</svg>
+
+<!-- ============ PARTICLES ============ -->
+<div class="particles" id="particles"></div>
+
+<!-- ============ NAVBAR ============ -->
+<header class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#hero" class="brand">
+      <span class="brand-mark">MW</span>
+      <span class="brand-text">MW Web Studio</span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#about" data-thread="1">About</a>
+      <a href="#services" data-thread="2">Services</a>
+      <a href="#skills" data-thread="3">Skills</a>
+      <a href="#portfolio" data-thread="4">Work</a>
+      <a href="#pricing" data-thread="5">Pricing</a>
+      <a href="#faq" data-thread="6">FAQ</a>
+      <a href="#contact" class="nav-cta">Hire Me</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="hero">
+  <div class="hero-bg-glow"></div>
+  <div class="hero-inner">
+    <p class="eyebrow reveal">Frontend Web Developer — Web Designer — UI/UX Designer</p>
+    <h1 class="hero-heading reveal">
+      Building Modern Websites<br>
+      <span class="type-wrap">That <span class="typed" id="typedText"></span><span class="type-cursor">|</span></span>
+    </h1>
+    <p class="hero-sub reveal">I design responsive, modern and high-converting websites for businesses around the world — stitched together with clean code and a designer's eye.</p>
+    <div class="hero-actions reveal">
+      <a href="#contact" class="btn btn-gold">Hire Me</a>
+      <a href="#portfolio" class="btn btn-ghost">View My Work</a>
+    </div>
+    <div class="hero-stats reveal">
+      <div class="stat">
+        <span class="stat-num" data-count="40">0</span><span class="stat-suffix">+</span>
+        <span class="stat-label">Projects Delivered</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num" data-count="98">0</span><span class="stat-suffix">%</span>
+        <span class="stat-label">Client Satisfaction</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num" data-count="3">0</span><span class="stat-suffix">+</span>
+        <span class="stat-label">Years Crafting Web</span>
+      </div>
+    </div>
+  </div>
+  <a href="#about" class="scroll-cue" aria-label="Scroll down">
+    <span></span>
+  </a>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="about" id="about">
+  <div class="section-inner about-grid">
+    <div class="about-visual reveal">
+      <div class="about-frame">
+        <div class="about-photo" aria-hidden="true">
+          <svg viewBox="0 0 200 240" class="photo-placeholder">
+            <rect width="200" height="240" rx="4" fill="url(#photoGrad)"/>
+            <circle cx="100" cy="92" r="38" fill="#2a2620" opacity="0.6"/>
+            <path d="M40 220 Q100 150 160 220 Z" fill="#2a2620" opacity="0.6"/>
+            <defs>
+              <linearGradient id="photoGrad" x1="0" y1="0" x2="200" y2="240">
+                <stop offset="0" stop-color="#1c1a17"/>
+                <stop offset="1" stop-color="#0d0c0a"/>
+              </linearGradient>
+            </defs>
+          </svg>
+          <span class="photo-tag">Maryam Ishaq</span>
+        </div>
+        <span class="about-frame-corner tl"></span>
+        <span class="about-frame-corner br"></span>
+      </div>
+    </div>
+    <div class="about-copy">
+      <p class="eyebrow reveal">01 — About Me</p>
+      <h2 class="section-heading reveal">The designer behind the code.</h2>
+      <p class="about-text reveal">Hi, I'm <strong>Maryam Ishaq</strong>, a passionate Frontend Web Developer specializing in modern business websites, landing pages and responsive web experiences. I enjoy transforming ideas into beautiful and functional websites.</p>
+      <p class="about-text reveal">Every project I take on is treated like a garment cut to measure — considered, precise, and built to last. From Pakistan, I work with founders and brands across the world who want their website to feel as trustworthy as it looks.</p>
+      <div class="about-tags reveal">
+        <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Responsive Design</span><span>UI/UX</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section class="services" id="services">
+  <div class="section-inner">
+    <p class="eyebrow reveal center">02 — Services</p>
+    <h2 class="section-heading reveal center">What I Can Build For You</h2>
+    <p class="section-sub reveal center">A full wardrobe of web solutions, each tailored to fit your business.</p>
+
+    <div class="services-grid">
+      <div class="service-card reveal">
+        <div class="service-icon">
+          <svg viewBox="0 0 48 48"><rect x="6" y="8" width="36" height="26" rx="2"/><path d="M6 16h36"/><path d="M18 40h12M24 34v6"/></svg>
+        </div>
+        <h3>Business Website</h3>
+        <p>Professional multi-page sites that establish credibility and convert visitors into clients.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">
+          <svg viewBox="0 0 48 48"><rect x="8" y="6" width="32" height="36" rx="2"/><path d="M14 16h20M14 24h20M14 32h12"/></svg>
+        </div>
+        <h3>Landing Page</h3>
+        <p>High-converting single-page experiences built to turn clicks into customers.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">
+          <svg viewBox="0 0 48 48"><circle cx="24" cy="18" r="8"/><path d="M10 40c0-8 6-13 14-13s14 5 14 13"/></svg>
+        </div>
+        <h3>Portfolio Website</h3>
+        <p>Elegant personal and creative portfolios that put your best work on display.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">
+          <svg viewBox="0 0 48 48"><path d="M24 6l4 10 10 1-8 7 3 10-9-6-9 6 3-10-8-7 10-1z"/></svg>
+        </div>
+        <h3>Beauty Salon Website</h3>
+        <p>Soft, elegant designs with booking-ready layouts for beauty & wellness brands.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">
+          <svg viewBox="0 0 48 48"><path d="M10 20l4-12h20l4 12"/><path d="M8 20h32v18a2 2 0 01-2 2H10a2 2 0 01-2-2z"/><path d="M18 20v6M30 20v6"/></svg>
+        </div>
+        <h3>Restaurant Website</h3>
+        <p>Warm, appetizing designs with menus, galleries and reservation-friendly layouts.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">
+          <svg viewBox="0 0 48 48"><path d="M8 12h4l3 20h20l3-14H14"/><circle cx="19" cy="38" r="2.5"/><circle cx="31" cy="38" r="2.5"/></svg>
+        </div>
+        <h3>E-commerce Frontend</h3>
+        <p>Storefront interfaces with product grids, cart flows and seamless checkout UI.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">
+          <svg viewBox="0 0 48 48"><path d="M8 34l6-16 8 4 8-14 10 26z"/><path d="M8 40h32"/></svg>
+        </div>
+        <h3>Website Redesign</h3>
+        <p>A modern, tailored overhaul for outdated sites that no longer represent your brand.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">
+          <svg viewBox="0 0 48 48"><rect x="4" y="16" width="18" height="12" rx="1"/><rect x="26" y="8" width="10" height="28" rx="1"/><rect x="38" y="20" width="6" height="16" rx="1"/></svg>
+        </div>
+        <h3>Responsive Website</h3>
+        <p>Pixel-perfect experiences across desktop, tablet and mobile — every single time.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">
+          <svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="6"/><path d="M24 6v6M24 36v6M6 24h6M36 24h6M11 11l4 4M33 33l4 4M11 37l4-4M33 15l4-4"/></svg>
+        </div>
+        <h3>Website Maintenance</h3>
+        <p>Ongoing care — updates, fixes and improvements to keep your site running perfectly.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section class="skills" id="skills">
+  <div class="section-inner skills-grid">
+    <div class="skills-copy">
+      <p class="eyebrow reveal">03 — Skills</p>
+      <h2 class="section-heading reveal">The Toolkit, Precisely Measured</h2>
+      <p class="section-sub reveal">Each skill is a thread in the fabric of every site I build — balanced, tested, and always current.</p>
+    </div>
+    <div class="skills-bars">
+      <div class="skill-row reveal" data-level="95">
+        <div class="skill-top"><span>HTML</span><span class="skill-pct">95%</span></div>
+        <div class="skill-track"><div class="skill-fill"></div></div>
+      </div>
+      <div class="skill-row reveal" data-level="92">
+        <div class="skill-top"><span>CSS</span><span class="skill-pct">92%</span></div>
+        <div class="skill-track"><div class="skill-fill"></div></div>
+      </div>
+      <div class="skill-row reveal" data-level="88">
+        <div class="skill-top"><span>JavaScript</span><span class="skill-pct">88%</span></div>
+        <div class="skill-track"><div class="skill-fill"></div></div>
+      </div>
+      <div class="skill-row reveal" data-level="75">
+        <div class="skill-top"><span>React</span><span class="skill-pct">75%</span></div>
+        <div class="skill-track"><div class="skill-fill"></div></div>
+      </div>
+      <div class="skill-row reveal" data-level="80">
+        <div class="skill-top"><span>Bootstrap</span><span class="skill-pct">80%</span></div>
+        <div class="skill-track"><div class="skill-fill"></div></div>
+      </div>
+      <div class="skill-row reveal" data-level="85">
+        <div class="skill-top"><span>Git</span><span class="skill-pct">85%</span></div>
+        <div class="skill-track"><div class="skill-fill"></div></div>
+      </div>
+      <div class="skill-row reveal" data-level="85">
+        <div class="skill-top"><span>GitHub</span><span class="skill-pct">85%</span></div>
+        <div class="skill-track"><div class="skill-fill"></div></div>
+      </div>
+      <div class="skill-row reveal" data-level="96">
+        <div class="skill-top"><span>Responsive Design</span><span class="skill-pct">96%</span></div>
+        <div class="skill-track"><div class="skill-fill"></div></div>
+      </div>
+      <div class="skill-row reveal" data-level="60">
+        <div class="skill-top"><span>Node.js</span><span class="skill-pct">60%</span></div>
+        <div class="skill-track"><div class="skill-fill"></div></div>
+      </div>
+      <div class="skill-row reveal" data-level="55">
+        <div class="skill-top"><span>Flutter</span><span class="skill-pct">55%</span></div>
+        <div class="skill-track"><div class="skill-fill"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PORTFOLIO ============ -->
+<section class="portfolio" id="portfolio">
+  <div class="section-inner">
+    <p class="eyebrow reveal center">04 — Selected Work</p>
+    <h2 class="section-heading reveal center">My Portfolio</h2>
+    <p class="section-sub reveal center">A few pieces cut, fitted and finished for real clients.</p>
+
+    <div class="portfolio-grid">
+
+      <article class="project-card reveal">
+        <div class="project-media">
+          <svg viewBox="0 0 400 260" class="project-art">
+            <rect width="400" height="260" fill="#0d0c0a"/>
+            <circle cx="200" cy="120" r="70" fill="none" stroke="#c9a961" stroke-width="2" opacity="0.5"/>
+            <circle cx="200" cy="120" r="50" fill="none" stroke="#c9a961" stroke-width="1" opacity="0.35"/>
+            <line x1="200" y1="120" x2="200" y2="78" stroke="#c9a961" stroke-width="3"/>
+            <line x1="200" y1="120" x2="228" y2="120" stroke="#c9a961" stroke-width="2"/>
+            <circle cx="200" cy="120" r="4" fill="#c9a961"/>
+            <text x="200" y="220" text-anchor="middle" class="project-art-label">LUXURY WATCH STORE</text>
+          </svg>
+        </div>
+        <div class="project-body">
+          <h3>Luxury Watch Store</h3>
+          <p>Luxury watch e-commerce frontend with premium dark UI.</p>
+          <div class="project-tech">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+          <div class="project-actions">
+            <a href="#" class="btn btn-gold-outline btn-sm" data-unavailable="true">Live Demo</a>
+            <a href="#" class="btn btn-line btn-sm" data-unavailable="true">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-media">
+          <svg viewBox="0 0 400 260" class="project-art">
+            <rect width="400" height="260" fill="#0d0c0a"/>
+            <path d="M200 60 C 240 60 260 100 260 140 C 260 185 232 210 200 210 C 168 210 140 185 140 140 C 140 100 160 60 200 60 Z" fill="none" stroke="#c9a961" stroke-width="1.5" opacity="0.45"/>
+            <path d="M200 90c14 0 24 14 24 30s-10 34-24 34-24-18-24-34 10-30 24-30z" fill="none" stroke="#c9a961" stroke-width="1" opacity="0.6"/>
+            <text x="200" y="230" text-anchor="middle" class="project-art-label">BEAUTY SALON</text>
+          </svg>
+        </div>
+        <div class="project-body">
+          <h3>Beauty Salon Website</h3>
+          <p>Modern responsive beauty salon website.</p>
+          <div class="project-tech">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+          <div class="project-actions">
+            <a href="https://maryamishaq34890m4-stack.github.io/Beauty-Salon/" target="_blank" rel="noopener" class="btn btn-gold-outline btn-sm">Live Demo</a>
+            <a href="#" class="btn btn-line btn-sm" data-unavailable="true">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-media">
+          <svg viewBox="0 0 400 260" class="project-art">
+            <rect width="400" height="260" fill="#0d0c0a"/>
+            <rect x="120" y="80" width="160" height="100" rx="6" fill="none" stroke="#c9a961" stroke-width="1.5" opacity="0.5"/>
+            <line x1="120" y1="100" x2="280" y2="100" stroke="#c9a961" stroke-width="1" opacity="0.5"/>
+            <circle cx="132" cy="90" r="2.5" fill="#c9a961"/>
+            <circle cx="141" cy="90" r="2.5" fill="#c9a961" opacity="0.6"/>
+            <rect x="135" y="115" width="60" height="8" rx="2" fill="#c9a961" opacity="0.4"/>
+            <rect x="135" y="130" width="90" height="6" rx="2" fill="#c9a961" opacity="0.25"/>
+            <text x="200" y="210" text-anchor="middle" class="project-art-label">SAASIFY</text>
+          </svg>
+        </div>
+        <div class="project-body">
+          <h3>SaaSify</h3>
+          <p>Modern SaaS landing page.</p>
+          <div class="project-tech">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+          <div class="project-actions">
+            <a href="https://maryamishaq34890m4-stack.github.io/saasify/" target="_blank" rel="noopener" class="btn btn-gold-outline btn-sm">Live Demo</a>
+            <a href="#" class="btn btn-line btn-sm" data-unavailable="true">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY CHOOSE ME ============ -->
+<section class="why" id="why">
+  <div class="section-inner">
+    <p class="eyebrow reveal center">05 — Why Choose Me</p>
+    <h2 class="section-heading reveal center">Built to Fit, Finished to Last</h2>
+    <div class="why-grid">
+      <div class="why-item reveal">
+        <span class="why-num">01</span>
+        <h3>Modern UI</h3>
+        <p>Interfaces that feel current, considered and on-trend.</p>
+      </div>
+      <div class="why-item reveal">
+        <span class="why-num">02</span>
+        <h3>Clean Code</h3>
+        <p>Structured, maintainable code that's easy to extend later.</p>
+      </div>
+      <div class="why-item reveal">
+        <span class="why-num">03</span>
+        <h3>Responsive Design</h3>
+        <p>Flawless across desktop, tablet and mobile devices.</p>
+      </div>
+      <div class="why-item reveal">
+        <span class="why-num">04</span>
+        <h3>Fast Delivery</h3>
+        <p>Clear timelines and dependable turnaround on every project.</p>
+      </div>
+      <div class="why-item reveal">
+        <span class="why-num">05</span>
+        <h3>SEO Friendly</h3>
+        <p>Built with structure and speed that search engines reward.</p>
+      </div>
+      <div class="why-item reveal">
+        <span class="why-num">06</span>
+        <h3>Professional Communication</h3>
+        <p>Clear, prompt updates from first message to final delivery.</p>
+      </div>
+      <div class="why-item reveal">
+        <span class="why-num">07</span>
+        <h3>Affordable Pricing</h3>
+        <p>Agency-level quality at rates built for growing businesses.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRICING ============ -->
+<section class="pricing" id="pricing">
+  <div class="section-inner">
+    <p class="eyebrow reveal center">06 — Pricing</p>
+    <h2 class="section-heading reveal center">Investment Plans</h2>
+    <p class="section-sub reveal center">Simple, transparent packages — every one delivered with the same care.</p>
+
+    <div class="pricing-grid">
+      <div class="price-card reveal">
+        <h3>Starter</h3>
+        <p class="price-tag"><span class="currency">$</span>49</p>
+        <p class="price-desc">Landing Page</p>
+        <ul class="price-list">
+          <li>Single-page design</li>
+          <li>Mobile responsive</li>
+          <li>Contact section</li>
+          <li>3-day delivery</li>
+        </ul>
+        <a href="#contact" class="btn btn-gold-outline full">Get Started</a>
+      </div>
+      <div class="price-card featured reveal">
+        <span class="price-badge">Most Popular</span>
+        <h3>Professional</h3>
+        <p class="price-tag"><span class="currency">$</span>149</p>
+        <p class="price-desc">Business Website</p>
+        <ul class="price-list">
+          <li>Up to 5 pages</li>
+          <li>Custom UI design</li>
+          <li>SEO optimization</li>
+          <li>5-day delivery</li>
+        </ul>
+        <a href="#contact" class="btn btn-gold full">Get Started</a>
+      </div>
+      <div class="price-card reveal">
+        <h3>Premium</h3>
+        <p class="price-tag"><span class="currency">$</span>299</p>
+        <p class="price-desc">Complete Website</p>
+        <ul class="price-list">
+          <li>Unlimited pages</li>
+          <li>Advanced animations</li>
+          <li>Full SEO & speed setup</li>
+          <li>Priority delivery</li>
+        </ul>
+        <a href="#contact" class="btn btn-gold-outline full">Get Started</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="testimonials" id="testimonials">
+  <div class="section-inner">
+    <p class="eyebrow reveal center">07 — Testimonials</p>
+    <h2 class="section-heading reveal center">Trusted By Clients Worldwide</h2>
+
+    <div class="testimonial-track reveal">
+      <div class="testimonial-card">
+        <p class="quote">"Maryam redesigned our business site in under a week and our inquiries doubled the following month. Communication was clear from day one."</p>
+        <div class="testimonial-person">
+          <div class="avatar" style="--c1:#c9a961;--c2:#3a3226">JR</div>
+          <div>
+            <p class="person-name">James Reynolds</p>
+            <p class="person-role">Founder, Reynolds Consulting — UK</p>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <p class="quote">"The salon website she built for us looks like something out of a $10,000 agency package. Every client compliments it."</p>
+        <div class="testimonial-person">
+          <div class="avatar" style="--c1:#e8d9b5;--c2:#2a2620">SL</div>
+          <div>
+            <p class="person-name">Sophia Lange</p>
+            <p class="person-role">Owner, Lange Beauty Studio — Germany</p>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <p class="quote">"Fast, professional, and genuinely talented. Our SaaS landing page finally converts the way it should."</p>
+        <div class="testimonial-person">
+          <div class="avatar" style="--c1:#c9a961;--c2:#1e1c19">AK</div>
+          <div>
+            <p class="person-name">Ahmed Khalid</p>
+            <p class="person-role">CEO, Northline Software — UAE</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-dots" id="testiDots"></div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="faq" id="faq">
+  <div class="section-inner faq-inner">
+    <p class="eyebrow reveal center">08 — FAQ</p>
+    <h2 class="section-heading reveal center">Common Questions</h2>
+
+    <div class="accordion reveal">
+      <div class="accordion-item">
+        <button class="accordion-head">
+          <span>What's your typical turnaround time?</span>
+          <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-body">
+          <p>Most landing pages are delivered within 3–5 days, and full business websites within 5–10 days depending on scope. Rush delivery is available on request.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-head">
+          <span>Do you offer revisions?</span>
+          <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-body">
+          <p>Yes — every package includes revision rounds so the final site matches your vision exactly before it's handed over.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-head">
+          <span>Will my website work on mobile?</span>
+          <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-body">
+          <p>Every project is built responsive from the ground up, tested across desktop, tablet and mobile before delivery.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-head">
+          <span>Do you provide ongoing support?</span>
+          <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-body">
+          <p>Yes, website maintenance packages are available for updates, fixes and improvements after launch.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-head">
+          <span>How do we get started?</span>
+          <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-body">
+          <p>Send a message through the contact form or WhatsApp with a short brief of what you need, and I'll reply with next steps and a quote.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact" id="contact">
+  <div class="section-inner contact-grid">
+    <div class="contact-copy">
+      <p class="eyebrow reveal">09 — Contact</p>
+      <h2 class="section-heading reveal">Let's Build Something Refined.</h2>
+      <p class="section-sub reveal">Tell me about your business and I'll get back to you within 24 hours with next steps.</p>
+      <div class="contact-details reveal">
+        <div class="contact-detail">
+          <svg viewBox="0 0 24 24"><path d="M4 4h16v16H4z" fill="none"/><path d="M4 6l8 7 8-7"/></svg>
+          <span>hello@mwwebstudio.com</span>
+        </div>
+        <div class="contact-detail">
+          <svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 00-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 00-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+          <span>Pakistan · Working with clients worldwide</span>
+        </div>
+      </div>
+    </div>
+    <form class="contact-form reveal" id="contactForm">
+      <div class="form-row">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your full name" required>
+      </div>
+      <div class="form-row">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="you@company.com" required>
+      </div>
+      <div class="form-row">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+      </div>
+      <div class="form-actions">
+        <button type="submit" class="btn btn-gold full">Hire Me</button>
+        <a href="https://wa.me/00000000000" target="_blank" rel="noopener" class="btn btn-whatsapp full">
+          <svg viewBox="0 0 24 24" width="18" height="18"><path d="M17.6 6.3A8.9 8.9 0 0012 4a8.9 8.9 0 00-7.7 13.4L3 21l3.7-1.3A8.9 8.9 0 0012 21a9 9 0 006.8-15.3zM12 19.3a7.3 7.3 0 01-3.7-1l-.3-.2-2.4.8.8-2.3-.2-.3A7.3 7.3 0 1119.3 12 7.3 7.3 0 0112 19.3z"/><path d="M16 14.2c-.2-.1-1.4-.7-1.6-.8s-.4-.1-.5.1-.6.7-.7.9-.3.2-.5.1a6 6 0 01-1.8-1.1 6.7 6.7 0 01-1.2-1.5c-.1-.2 0-.4.1-.5l.3-.4c.1-.1.1-.2.2-.4s0-.3 0-.4-.5-1.2-.7-1.7-.4-.4-.5-.4h-.5a.9.9 0 00-.6.3 2.8 2.8 0 00-.9 2.1c0 1.2.9 2.4 1 2.6.1.1 1.8 2.7 4.3 3.8.6.3 1.1.4 1.4.5a3.4 3.4 0 001.6.1c.5-.1 1.4-.6 1.6-1.1s.2-.9.1-1z"/></svg>
+          WhatsApp
+        </a>
+      </div>
+      <p class="form-note" id="formNote"></p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="section-inner footer-inner">
+    <div class="footer-brand">
+      <span class="brand-mark">MW</span>
+      <span class="brand-text">MW Web Studio</span>
+    </div>
+    <div class="footer-socials">
+      <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 10v7M7 7v.01M11 17v-4.5a2 2 0 014 0V17M11 12.5V17"/></svg></a>
+      <a href="#" aria-label="GitHub"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 00-3.2 19.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.5-1.1-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.7.4-1.1.6-1.4-2.2-.3-4.6-1.1-4.6-4.9 0-1.1.4-2 1-2.6-.1-.3-.4-1.4.1-2.8 0 0 .8-.3 2.8 1a9.6 9.6 0 015 0c1.9-1.3 2.8-1 2.8-1 .5 1.4.2 2.5.1 2.8.6.6 1 1.5 1 2.6 0 3.8-2.3 4.6-4.6 4.9.4.3.7 1 .7 2v2.9c0 .3.2.6.7.5A10 10 0 0012 2z"/></svg></a>
+      <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M14 9h3V6h-3a3 3 0 00-3 3v2H9v3h2v6h3v-6h3l1-3h-4v-2c0-.6.4-1 1-1z"/></svg></a>
+      <a href="https://wa.me/00000000000" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M17.6 6.3A8.9 8.9 0 0012 4a8.9 8.9 0 00-7.7 13.4L3 21l3.7-1.3A8.9 8.9 0 0012 21a9 9 0 006.8-15.3zM12 19.3a7.3 7.3 0 01-3.7-1l-.3-.2-2.4.8.8-2.3-.2-.3A7.3 7.3 0 1119.3 12 7.3 7.3 0 0112 19.3z"/></svg></a>
+    </div>
+    <p class="footer-copy">© 2026 Maryam Ishaq | MW Web Studio</p>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+
+<script src="script.js"></script>
+</body>
+</html>
